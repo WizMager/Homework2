@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Task02
 {
     //2. Написать метод подсчета количества цифр числа.
-    //Островский Антон
+
     class Program
     {
         static void Main(string[] args)
@@ -26,7 +26,7 @@ namespace Task02
             foreach(char num in number)
             {
                 if (num == ',' || num == '.')
-                    count--;
+                    continue;
                 count++;
             }
             return count;

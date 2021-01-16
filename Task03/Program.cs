@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Task03
 {
     //3. С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.
-    //Островский Антон
+
     class Program
     {
         static void Main(string[] args)
@@ -18,11 +18,11 @@ namespace Task03
             {
                 Console.Write("Введите число не равное 0(0 - конец ввода): ");
                 inputNumber = double.Parse(Console.ReadLine());
-                if (inputNumber % 2 != 0 && inputNumber > 0)
+                if (inputNumber % 2 != 0 & inputNumber > 0)
                 {
                     result += inputNumber;
                 }
-            } while (inputNumber < 0 || inputNumber > 0);
+            } while (inputNumber != 0);
 
             Console.Clear();
             Console.WriteLine($"Сумма нечётных положительных чисел равна: {result}.");

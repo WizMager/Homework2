@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Task01
 {
     //1. Написать метод, возвращающий минимальное из трех чисел.
-    //Островский Антон
     class Program
     {
         static void Main(string[] args)
