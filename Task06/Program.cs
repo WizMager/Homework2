@@ -18,7 +18,7 @@ namespace Task06
             int countNum = 0;
             for (int i = 1; i <= 1000000000; i++)
             {
-                if (i / SumNumber(i) % 2 == 0)
+                if (i % SumNumber(i) == 0)
                     countNum++;
             }
             DateTime finish = DateTime.Now;
@@ -31,10 +31,10 @@ namespace Task06
         static int SumNumber(int number)
         {
             int sumNum = 0;
-            string strNumber = Convert.ToString(number);
-            foreach(char ch in strNumber)
+            while (number > 0)
             {
-                sumNum += Convert.ToInt32(ch);
+                sumNum += number % 10;
+                number /= 10;
             }
             return sumNum;
         }
